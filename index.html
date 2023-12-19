@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M.Notych CV</title>
+  <title>michael notych</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css">
@@ -18,11 +18,12 @@
       <img class="cv__image" src="./img/me.png" alt="Michael Notych" width="500" height="320">
       <ul class="cv__facts">
         <li>
-          Currently  working at Tilda&nbsp;<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          Currently  working at 
+		  <a href="https://tilda.cc/?lang=en" target="_blank">Tilda&nbsp;<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.15026 6.22003V11.0942H7.19629V5.88L8.15026 6.22003Z" fill="#333333"/>
             <path d="M4.4822 5.79002C4.44821 4.52403 5.11618 3.86804 5.98619 3.86804C6.51819 3.86804 6.92419 4.03805 7.7862 4.44405C8.42018 4.75004 8.88218 4.97605 9.35818 4.97605C9.83418 4.97605 10.0262 4.60204 10.0362 3.91206H10.7942C10.8622 5.32605 10.1382 5.83403 9.34619 5.83403C8.83821 5.83403 8.38417 5.68603 7.51421 5.28003C6.91418 4.98603 6.45021 4.72602 5.99818 4.72602C5.5462 4.72602 5.26217 5.04203 5.2522 5.81203H4.4822V5.79002Z" fill="#333333"/>
             <path d="M7.75 14C6.36553 14 5.01217 13.5896 3.86102 12.8201C2.70987 12.0509 1.81265 10.9581 1.28284 9.67881C0.753024 8.39956 0.614424 6.99226 0.884493 5.63439C1.15461 4.27652 1.82131 3.02921 2.80026 2.05026C3.77921 1.07131 5.02652 0.404605 6.38439 0.134493C7.74226 -0.135576 9.1497 0.00302384 10.4288 0.532836C11.7079 1.06265 12.8011 1.95987 13.5703 3.11102C14.3394 4.26217 14.75 5.61553 14.75 7C14.75 8.85675 14.0125 10.6369 12.6997 11.9499C11.387 13.2624 9.60653 14 7.75 14ZM7.75 0.45203C6.45492 0.45203 5.18897 0.836021 4.11215 1.55553C3.03533 2.27505 2.19603 3.2977 1.70043 4.49418C1.20483 5.6907 1.07516 7.00744 1.32781 8.2775C1.58047 9.54756 2.20412 10.7144 3.11986 11.6301C4.03563 12.5457 5.20235 13.1696 6.47255 13.4221C7.74274 13.6749 9.05931 13.545 10.2558 13.0498C11.4523 12.5541 12.475 11.7145 13.1945 10.6378C13.914 9.56113 14.298 8.295 14.298 7C14.2959 5.264 13.6053 3.59975 12.3778 2.37222C11.1503 1.14468 9.486 0.45413 7.75 0.45203Z" fill="#333333"/>
-          </svg>
+          </svg></a>
         </li>
         <li>
           Located in Bangkok, Thailand 🇹🇭
@@ -86,4 +87,14 @@
     </div>
   </div>
 </body>
+<script>
+	function scaleHero() {
+		document.body.style.transform = window.innerWidth <= 980 
+			? ''
+			: 'scale(' + (1.4 > (window.innerWidth / 940) ? window.innerWidth / 940 : '1.4') + ')'
+	}
+
+	scaleHero();
+	window.addEventListener('resize', scaleHero);
+</script>
 </html>
